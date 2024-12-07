@@ -1,4 +1,5 @@
 from src.consolidation import consolider_fichiers_csv
+from src.recherche import rechercher_donnees
 
 
 if __name__ == "__main__":
@@ -9,3 +10,16 @@ if __name__ == "__main__":
         print("Consolidation terminée avec succès.")
     else:
         print("Échec de la consolidation.")
+
+
+    # Recherche rapide
+    fichier_consolide = "../outputs/consolidated.csv"
+    filtre = "Produit"
+    valeur = "Pomme"
+    resultats = rechercher_donnees(fichier_consolide, filtre, valeur)
+
+    if resultats is not None:
+        print(resultats)
+    else:
+        print("Aucun résultat trouvé ou une erreur est survenue.")
+
