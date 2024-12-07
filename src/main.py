@@ -1,5 +1,6 @@
 from src.consolidation import consolider_fichiers_csv
 from src.recherche import rechercher_donnees
+from src.rapport import generer_rapport
 
 
 if __name__ == "__main__":
@@ -22,4 +23,12 @@ if __name__ == "__main__":
         print(resultats)
     else:
         print("Aucun résultat trouvé ou une erreur est survenue.")
+
+    # Génération de rapport
+    success = generer_rapport(fichier_consolide)
+    if success:
+        print("Rapport généré avec succès.")
+    else:
+        print("Une erreur est survenue lors de la génération du rapport.")
+
 
