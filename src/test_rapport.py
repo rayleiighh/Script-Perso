@@ -1,7 +1,7 @@
 import unittest
 import os
 import pandas as pd
-from src.rapport import generer_rapport
+from rapport import generer_rapport
 
 class TestRapport(unittest.TestCase):
     def setUp(self):

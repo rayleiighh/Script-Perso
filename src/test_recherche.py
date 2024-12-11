@@ -1,7 +1,7 @@
 import unittest
 import os
 import pandas as pd
-from src.recherche import rechercher_donnees
+from recherche import rechercher_donnees
 
 class TestRecherche(unittest.TestCase):
     def setUp(self):

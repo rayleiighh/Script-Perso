@@ -1,7 +1,7 @@
 import unittest
 import os
 import pandas as pd
-from src.consolidation import consolider_fichiers_csv
+from consolidation import consolider_fichiers_csv
 
 class TestConsolidation(unittest.TestCase):
 
