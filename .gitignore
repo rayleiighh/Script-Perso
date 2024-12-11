@@ -4,3 +4,4 @@ __pycache__/
 *.pdf
 outputs/
 *.log
+*.mkv
