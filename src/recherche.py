@@ -1,6 +1,9 @@
 import pandas as pd
 import logging
+import os
 
+# Créer le dossier 'outputs' s'il n'existe pas
+os.makedirs("../outputs", exist_ok=True)
 # Configurer les logs
 logging.basicConfig(
     level=logging.INFO,
